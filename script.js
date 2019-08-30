@@ -6,16 +6,14 @@ var imageList = [
 ];
 var point = 0;
 
-$('.block').click(function () {
-    if(point > imageList.length){
+$('.block').click(function() {
+    if (point > imageList.length) {
         $('img').attr('src', imageList[0])
-    }else if(point < imageList.length){
+    } else if (point < imageList.length) {
         $('img').attr('src', imageList[point])
         point++
-            if(point == imageList.length){
-                point = 0
-            }
+        if (point == imageList.length) {
+            point = 0
+        }
     }
-    
-
 })
